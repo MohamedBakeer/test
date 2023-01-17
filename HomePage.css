@@ -474,7 +474,7 @@ header label {
   color: #9cceff;
   box-shadow: 0px 0px 10px #0281ff;
 }
-.contNC .cardNC .hyperlinko  a:hover {
+.contNC .cardNC .hyperlinko a:hover {
   background-color: #1b8dff;
   color: #ffffff;
   box-shadow: 0px 0px 25px #0058b1;
@@ -551,7 +551,7 @@ header label {
   color: #fff;
   margin-bottom: 5px;
 }
-.cardStat .textStat  p {
+.cardStat .textStat p {
   font-size: 1.4rem;
   font-weight: 200;
   color: #fff;
@@ -811,22 +811,16 @@ header label {
 }
 /* End Showlides js */
 
-
-
-
-
-
-
 /* Start Footer_Sec */
-.footerSec{
+.footerSec {
   width: 100%;
   /* border: 1px solid red; */
   text-align: center;
-  padding: 10px;
+  /* padding: 10px; */
   background-color: #0060c0;
 }
 
-.footerSec .secF1{
+.footerSec .secF1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -835,7 +829,9 @@ header label {
   width: 100%;
   height: 50vh;
 }
-.footerSec .secF1 .GoalFooter,.contactFooter,.mapFooter {
+.footerSec .secF1 .GoalFooter,
+.contactFooter,
+.mapFooter {
   /* border: red solid 2px; */
   width: 100%;
   height: 100%;
@@ -850,36 +846,36 @@ header label {
   /* font-size: 1rem; */
   font-weight: 800;
 }
-.footerSec .secF1 .GoalFooter ul{
+.footerSec .secF1 .GoalFooter ul {
   margin: 20px 60px;
   /* padding: 0 40px; */
 }
-.footerSec .secF1 .GoalFooter ul li{
+.footerSec .secF1 .GoalFooter ul li {
   margin: 20px 0px;
   color: #fff;
   font-size: 1rem;
   font-weight: 100;
 }
-.footerSec .secF1 .GoalFooter ul li a{
+.footerSec .secF1 .GoalFooter ul li a {
   color: rgba(255, 255, 255, 0.74);
   font-size: 1rem;
   font-weight: 100;
 }
 
-.footerSec .secF1 .contactFooter{
+.footerSec .secF1 .contactFooter {
   text-align: right;
   padding: 10px;
   direction: ltr;
 }
-.footerSec .secF1 .contactFooter p{
+.footerSec .secF1 .contactFooter p {
   margin: 15px 0px;
-  
+
   color: #fff;
   font-size: 1rem;
   font-weight: 100;
   text-transform: lowercase;
 }
-.footerSec .secF1 .contactFooter i{
+.footerSec .secF1 .contactFooter i {
   padding-right: 15px;
   padding-left: 30px;
   padding: 10px 15px 10px 30px;
@@ -905,22 +901,18 @@ header label {
   height: 100%;
 }
 
-
-
-
-
-
-.footerSec .secF2{
+.footerSec .secF2 {
   background-color: #006ad4;
   padding: 30px;
   width: 100%;
 }
-.footerSec .secF2  span,a{
+.footerSec .secF2 span,
+a {
   color: #fff;
   font-size: 1.5rem;
   margin: 0 15px;
 }
-.footerSec .secF2 span  a{
+.footerSec .secF2 span a {
   margin: 0 15px;
   font-size: 1.5rem;
   padding: 0.65% 1.5%;
@@ -929,22 +921,21 @@ header label {
   background-color: #005db9;
   box-shadow: 0px 0px 10px #3179c0;
 }
-.footerSec .secF2 span  a:hover{
+.footerSec .secF2 span a:hover {
   border-radius: 20px;
   color: #005db9;
   background-color: #fff;
   box-shadow: 0px 0px 25px #fff;
 }
 
-
-.footerSec .secF3{
+.footerSec .secF3 {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 30px;
   width: 100%;
 }
-.footerSec .secF3 a{
+.footerSec .secF3 a {
   margin: 0 15px;
   font-size: 2rem;
   padding: 1% 1.5%;
@@ -952,39 +943,78 @@ header label {
   background-color: #1173d6;
   box-shadow: 0px 0px 5px #277dd3;
 }
-.footerSec .secF3 a:nth-child(1){
+.footerSec .secF3 a:nth-child(1) {
   border-radius: 30px 0px 30px 0px;
 }
-.footerSec .secF3 a:nth-child(3){
+.footerSec .secF3 a:nth-child(3) {
   border-radius: 0px 30px 0px 30px;
 }
-.footerSec .secF3 a:hover{
+.footerSec .secF3 a:hover {
   border-radius: 50px;
   box-shadow: 0px 0px 25px #328eeb;
 }
+
+@media (max-width: 991px) {
+  .footerSec .secF1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0060c0;
+    padding: 0 10px;
+    width: 100%;
+    height: 50vh;
+    overflow-y: scroll;
+  }
+  .footerSec .secF1 .GoalFooter,
+  .contactFooter,
+  .mapFooter {
+    margin:  5px 0;
+  }
+  .footerSec .secF1 .GoalFooter {
+    text-align: center;
+    padding: 60px 15px;
+  }
+  .footerSec .secF1 .GoalFooter h1 {
+    margin: 0px;
+  }
+  .footerSec .secF1 .GoalFooter ul {
+    margin: 0px;
+  }
+
+  .footerSec .secF1 .contactFooter {
+    text-align: right;
+    padding: 25px;
+    direction: ltr;
+  }
+  .footerSec .secF1 .contactFooter p {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .footerSec .secF2 {
+    padding: 10px;
+  }
+  .footerSec .secF2 span,
+  a {
+    font-size: 1rem;
+    margin: 0 10px;
+  }
+  .footerSec .secF2 span a {
+    font-size: 1.2rem;
+    padding: 0.65% 2.5%;
+  }
+
+  .footerSec .secF3 {
+    padding: 10px;
+  }
+  .footerSec .secF3 a {
+    margin: 0 15px;
+    font-size: 1.75rem;
+    padding: 2% 3%;
+  }
+}
+
 /* End Footer_Sec */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Start Footer */
 .footers {
@@ -1012,7 +1042,8 @@ a {
     padding: 5px;
     background-color: #0058b1;
   }
-  .footers  p,a {
+  .footers p,
+  a {
     font-weight: 600;
     font-size: 0.75rem;
     color: #fff;
